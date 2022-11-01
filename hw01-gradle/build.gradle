@@ -11,11 +11,11 @@ dependencies {
 }
 
 shadowJar {
-    archiveBaseName.set('homeworkGradle')
+    archiveBaseName.set('helloOtusGradle')
     archiveVersion.set('1.0')
     archiveClassifier.set('')
     manifest {
-        attributes 'Main-Class': 'ru.otus.Main'
+        attributes 'Main-Class': 'ru.otus.HelloOtus'
     }
 }
 
