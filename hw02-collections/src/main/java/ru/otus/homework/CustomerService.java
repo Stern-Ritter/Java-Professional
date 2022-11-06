@@ -10,7 +10,7 @@ public class CustomerService {
 
     //todo: 3. надо реализовать методы этого класса
     //важно подобрать подходящую Map-у, посмотрите на редко используемые методы, они тут полезны
-    NavigableMap<Customer, String> customers;
+    private final NavigableMap<Customer, String> customers;
 
     public CustomerService() {
         this.customers = new TreeMap<>(Comparator.comparingLong(Customer::getScores));
