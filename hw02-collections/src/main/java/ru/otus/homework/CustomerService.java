@@ -3,13 +3,14 @@ package ru.otus.homework;
 import java.util.AbstractMap;
 import java.util.Comparator;
 import java.util.Map;
+import java.util.NavigableMap;
 import java.util.TreeMap;
 
 public class CustomerService {
 
     //todo: 3. надо реализовать методы этого класса
     //важно подобрать подходящую Map-у, посмотрите на редко используемые методы, они тут полезны
-    TreeMap<Customer, String> customers;
+    private final NavigableMap<Customer, String> customers;
 
     public CustomerService() {
         this.customers = new TreeMap<>(Comparator.comparingLong(Customer::getScores));
